@@ -81,7 +81,7 @@ Use the `COPY` instruction's `--from` flag to accomplish this:
 
 ```Dockerfile
 ...
-COPY --from=hairyhenderson/gomplate:stable /gomplate /bin/gomplate
+COPY --from=hairyhenderson/gomplate:stable /bin/gomplate /bin/gomplate
 ```
 
 Now, `gomplate` will be available in the `/bin` directory inside the container image.
